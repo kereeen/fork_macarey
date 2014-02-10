@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<name>new15</name>
+	<version>1.0.0</version>
+	<requirements>
+		<minimum_version>3.0.0</minimum_version>
+	</requirements>
+	<thumbnail>thumbnail.png</thumbnail>
+	<description>
+		<![CDATA[
+			OS Version Two
+		]]>
+	</description>
+	<authors>
+		<author>
+			<name>Macarey</name>
+			<url>try.com</url>
+		</author>
+	</authors>
+	<metanavigation supported="false" />
+	<templates>
+		<template label="Default" path="core/layout/templates/default.tpl">
+			<positions>
+					<position name="main">
+					<defaults>
+						<widget module="blog" action="recent_articles_full" />
+							<widget module="about" action="" />
+					</defaults>
+				</position>
+				<position name="right">
+					<defaults>
+						<widget module="search" action="form" />
+						
+					</defaults>
+				</position>
+			</positions>
+			<format>
+				[main, right]
+			</format>
+		</template>
+	</templates>
+</theme>
